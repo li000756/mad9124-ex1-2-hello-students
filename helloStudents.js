@@ -10,6 +10,12 @@
 
 const students = require("./students.json");
 
-students.forEach(({ firstName, lastName }) => {
+let countLastNameD = 0;
+students.forEach(({firstName, lastName}) => {
   console.log(`Hello ${firstName} ${lastName}.`);
-});
+  if (lastName.startsWith("D")) {
+    countLastNameD++;
+  };
+})
+console.log(`Count of last names starting with D is ${countLastNameD}.`);
+

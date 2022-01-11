@@ -10,6 +10,6 @@
 
 const students = require("./students.json");
 
-students.forEach(({firstName, lastName}) => {
+students.forEach(({ firstName, lastName }) => {
   console.log(`Hello ${firstName} ${lastName}.`);
 });
